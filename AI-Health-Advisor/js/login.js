@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
       try {
         const user = await signIn(email, password);
         alert(`Login berhasil, selamat datang kembali!`);
-        window.location.href = "index.html"; // Ubah ke halaman setelah login
+        window.location.href = "AI-Health-Advisor/homepage.html";
       } catch (error) {
         alert(`Login gagal: ${error.message}`);
       }
@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", () => {
         alert(`Berhasil daftar, selamat datang ${username}`);
         document.getElementById("register_form").reset();
         window.localStorage.setItem("username", username);
-        window.location.href = "login.html";
+        window.location.href = "index.html";
       } catch (error) {
         alert(`Gagal daftar: ${error.message}`);
       }
